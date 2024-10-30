@@ -126,35 +126,40 @@ h6 {
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   place-content: center;
   position: relative;
   background-color: var(--Dark-cyan);
   font-family: var(--ff);
-  background-image: url(images\bg-pattern-top.svg);
-  overflow: hidden;
 }
 
 
 
-.top-circle {
+ .top-circle {
   width: 31.25rem;  /* 500px */
   height: 31.25rem;     /* 500px */
+  background: url(/images/bg-pattern-top.svg);
+  background-size: contain;
   object-fit: contain;
   position: absolute;
-  top: -30%;
-  left: -15%;
+  top: -40%;
+  left: -50%;
+  /* overflow: hidden; */
 }
 
 .bottom-circle {
   width: 31.25rem;       /* 500px */
   height: 31.25rem;      /* 500px */
+  background: url(/images/bg-pattern-bottom.svg);
+  background-size: contain;
   object-fit: contain;
   position: absolute;
-  bottom: -30%;
-  right: -15%;
-}
+  bottom: -40%;
+  right: -50%;
+  /* overflow: hidden; */
+} 
 
 .profile-card {
   --br: 0.9375rem;     /* 15px */
@@ -211,6 +216,10 @@ body {
 .header .user-name .age {
   margin-left: var(--space-100);
   font-weight: 400;
+  color: var(--Dark-gray);
+}
+.header .location{
+  color: var(--Dark-gray);
 }
 
 
@@ -241,4 +250,33 @@ body {
   letter-spacing: 2px;
   color: var(--Dark-gray);
   /* margin-top: -4px; */
+}
+
+
+@media (min-width: 700px){
+  body{
+    overflow:hidden;
+  }
+  .top-circle {
+  width: 31.25rem;  /* 500px */
+  height: 31.25rem;     /* 500px */
+  background: url(/images/bg-pattern-top.svg);
+  background-size: contain;
+  object-fit: contain;
+  position: absolute;
+  top: -20%;
+  left: -15%;
+}
+
+.bottom-circle {
+  width: 31.25rem;       /* 500px */
+  height: 31.25rem;      /* 500px */
+  background: url(/images/bg-pattern-bottom.svg);
+  background-size: contain;
+  object-fit: contain;
+  position: absolute;
+  bottom: -20%;
+  right: -15%;
+
+} 
 }
