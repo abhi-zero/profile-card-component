@@ -31,9 +31,6 @@ During the development of this project, several challenges were encountered, par
 - **Correct Circle Positioning**: Achieving the desired "quad circle" effect required careful manipulation of CSS properties.
 - **Visibility Issues**: Ensuring that the circles displayed correctly across different devices and browser sizes, particularly in mobile views.
 
-
 ## Conclusion
 
 This project demonstrates the application of modern CSS practices and provides a visually appealing layout for presenting user profiles. Despite the challenges faced with circle positioning, the project served as a valuable learning experience in CSS layout management.
-
-
