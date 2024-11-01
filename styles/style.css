@@ -145,7 +145,6 @@ body {
  .top-circle {
   width: 31.25rem;  /* 500px */
   height: 31.25rem;     /* 500px */
-
   background-size: contain;
   object-fit: contain;
   position: absolute;
@@ -157,7 +156,6 @@ body {
 .bottom-circle {
   width: 31.25rem;       /* 500px */
   height: 31.25rem;      /* 500px */
-
   object-fit: contain;
   position: absolute;
   bottom: -30%;
@@ -262,23 +260,13 @@ body {
     overflow:hidden;
   }
   .top-circle {
-  width: 31.25rem;  /* 500px */
-  height: 31.25rem;     /* 500px */
-
-  object-fit: contain;
-  position: absolute;
   top: -20%;
   left: -15%;
-}
+  }
 
-.bottom-circle {
-  width: 31.25rem;       /* 500px */
-  height: 31.25rem;      /* 500px */
- 
-  object-fit: contain;
-  position: absolute;
-  bottom: -20%;
-  right: -15%;
+  .bottom-circle {
+    bottom: -20%;
+    right: -15%;
 
-} 
+  } 
 }
